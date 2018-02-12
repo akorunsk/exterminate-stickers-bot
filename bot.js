@@ -10,7 +10,7 @@ app.listen(portNum, () => console.log(`Server started on port ${portNum}.`));
 
 //==// Here magic happens //==//
 
-let token = '514342456:AAFg9Z0iXcarwTvo1I79oGDouvTNJ4Rb00M';
+let token = config.token;
 let bot = new telegram_bot(token, {polling: true});
 
 bot.on('message', async function (msg) {
