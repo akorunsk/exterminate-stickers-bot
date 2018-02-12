@@ -1,0 +1,23 @@
+{
+  "name": "exterminate-stickers-bot",
+  "version": "1.0.0",
+  "description": "telegram bot that deletes all stickers sent in group chat",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akorunsk/exterminate-stickers-bot.git"
+  },
+  "author": "Anna Korunska",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akorunsk/exterminate-stickers-bot/issues"
+  },
+  "homepage": "https://github.com/akorunsk/exterminate-stickers-bot#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "node-telegram-bot-api": "^0.30.0"
+  }
+}
