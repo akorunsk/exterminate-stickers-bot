@@ -4,7 +4,7 @@
   "description": "telegram bot that deletes all stickers sent in group chat",
   "main": "bot.js",
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "node bot.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
