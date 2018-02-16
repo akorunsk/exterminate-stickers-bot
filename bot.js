@@ -23,4 +23,3 @@ bot.on('message', async function (msg) {
         }
     }
 });
-
