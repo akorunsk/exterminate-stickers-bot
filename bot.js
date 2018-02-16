@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const telegram_bot = require('node-telegram-bot-api');
+const mainRoutes = require('./routes/mainroutes.js');
 const config = require('./modules/config');
 
 app.set('view engine', 'ejs');
@@ -8,8 +8,11 @@ app.set('view engine', 'ejs');
 let portNum = config.port;
 app.listen(portNum, () => console.log(`Server started on port ${portNum}.`));
 
+app.use('/', mainRoutes);
+
 //==// Here magic happens //==//
 
+const telegram_bot = require('node-telegram-bot-api');
 let token = config.token;
 let bot = new telegram_bot(token, {polling: true});
 

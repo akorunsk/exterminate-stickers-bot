@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/akorunsk/exterminate-stickers-bot#readme",
   "dependencies": {
+    "ejs": "^2.5.7",
     "express": "^4.16.2",
     "node-telegram-bot-api": "^0.30.0"
   }
